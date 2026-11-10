@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "generator": {
+    "name": "karamel-vanguard-core",
+    "version": "2.0.0"
+  },
+  "project": {
+    "slug": "velvet-aura-makeup",
+    "businessName": "Velvet Aura Beauty",
+    "vertical": "retail_craft",
+    "domainUrl": "https://velvetaurabeauty.com",
+    "generatedOn": "2026-11-09"
+  },
+  "archetype": {
+    "id": "retail-atelier-botanico",
+    "name": "Velvet Rose, Champagne & Espresso Editorial"
+  },
+  "modules": [
+    "admin_panel",
+    "catalog_showcase",
+    "contact_location",
+    "whatsapp_cart"
+  ],
+  "hostingTarget": "cloudflare",
+  "verdict": {
+    "certified": true,
+    "reasons": []
+  },
+  "audit": {
+    "passed": true,
+    "score": 100,
+    "passedChecks": 10,
+    "totalChecks": 10,
+    "checks": [
+      {
+        "id": "S-01",
+        "name": "Escaneo Zero-Trust de Secretos y Eventos Inline",
+        "passed": true,
+        "violations": []
+      },
+      {
+        "id": "U-01",
+        "name": "Prohibición de Estilos Inline y Tokens CSS Centralizados",
+        "passed": true,
+        "violations": []
+      },
+      {
+        "id": "A-01",
+        "name": "Clean URLs (Cero .html), Hosting Seguro (Cloudflare Pages / Vercel) y Automatización",
+        "passed": true,
+        "violations": []
+      },
+      {
+        "id": "A-02",
+        "name": "Centralización de Favicons, Webmanifest, 404.html y Legales",
+        "passed": true,
+        "violations": []
+      },
+      {
+        "id": "F-01",
+        "name": "Patrón Local-First Resilient Fallback y Cero Waterfalls",
+        "passed": true,
+        "violations": []
+      },
+      {
+        "id": "F-02",
+        "name": "Blindaje Anti-XSS con escHtml() en Renderizadores DOM",
+        "passed": true,
+        "violations": []
+      },
+      {
+        "id": "B-01",
+        "name": "Seguridad SQL (RLS + is_admin + SECURITY INVOKER) y Seed",
+        "passed": true,
+        "violations": []
+      },
+      {
+        "id": "G-01",
+        "name": "Cumplimiento SEO & GEO (llms.txt, robots.txt, sitemap.xml, JSON-LD)",
+        "passed": true,
+        "violations": []
+      },
+      {
+        "id": "U-02",
+        "name": "Protección de Micro-Interacciones Hover e Integridad de Enlaces CSS/JS",
+        "passed": true,
+        "violations": []
+      },
+      {
+        "id": "D-01",
+        "name": "Gobernanza Documental Completa (AGENTS.md, SPEC.md, Catálogo 5-Whys)",
+        "passed": true,
+        "violations": []
+      }
+    ]
+  },
+  "redTeam": {
+    "compromised": false,
+    "vectorsTested": 5,
+    "exploitsFound": 0,
+    "findings": []
+  },
+  "grounding": {
+    "grounded": true,
+    "discrepancies": []
+  },
+  "files": {
+    "count": 40,
+    "totalBytes": 214119,
+    "digest": "9b60b5914351d24389e35a00e319b0811bb9ec513f21d53ddc984c04f456480d"
+  }
+}

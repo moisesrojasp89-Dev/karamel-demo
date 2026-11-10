@@ -1,0 +1,288 @@
+.catalog-sections-stack {
+  display: grid;
+  gap: 2.75rem;
+  padding: 0.5rem 0 2rem;
+}
+.category-shelf {
+  display: grid;
+  gap: 1rem;
+}
+.shelf-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--text-primary) 10%, transparent);
+}
+.shelf-title {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.shelf-hint {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+.shelf-carousel {
+  display: flex;
+  gap: 1.15rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 0.35rem 0.15rem 1rem;
+}
+.mcard {
+  flex: 0 0 212px;
+  width: 212px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg-primary);
+  border: 1px solid color-mix(in srgb, var(--text-primary) 9%, transparent);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-fast);
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.mcard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-elevated);
+  border-color: color-mix(in srgb, var(--accent-primary) 45%, transparent);
+}
+.mcard-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background-color: var(--bg-secondary);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mcard-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+.mcard:hover .mcard-img {
+  transform: scale(1.06);
+}
+.mcard-floating-tags {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  right: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+.mcard-badge {
+  padding: 0.22rem 0.65rem;
+  border-radius: 999px;
+  background-color: color-mix(in srgb, var(--bg-elevated) 85%, transparent);
+  backdrop-filter: blur(6px);
+  color: var(--text-on-dark);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.empty-state {
+  display: grid;
+  justify-items: center;
+  gap: 0.75rem;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.mcard-quick-plus {
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0.6rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: color-mix(in srgb, var(--bg-primary) 90%, transparent);
+  backdrop-filter: blur(6px);
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: var(--shadow-card);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+.mcard:hover .mcard-quick-plus {
+  background-color: var(--accent-primary);
+  color: var(--text-on-dark);
+}
+.mcard-body {
+  padding: 0.85rem 0.9rem 0.95rem;
+  display: grid;
+  gap: 0.28rem;
+}
+.mcard-brand {
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+.mcard-title {
+  font-family: var(--font-display);
+  font-size: 1.04rem;
+  line-height: 1.22;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.44em;
+}
+.mcard-compact-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid color-mix(in srgb, var(--text-primary) 7%, transparent);
+}
+.mcard-price {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.mcard-tap-hint {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+}
+.mcard-desc {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+.detail-modal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+  gap: 1.35rem;
+  align-items: start;
+}
+.detail-modal-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-secondary);
+}
+.detail-modal-info {
+  display: grid;
+  gap: 0.65rem;
+}
+.mcard-stock {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--status-success);
+}
+.mcard-stock.low-stock {
+  color: var(--status-danger);
+}
+.stock-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.mcard-actions {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.btn-wa-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--tap-target-min);
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background-color: var(--accent-primary);
+  color: var(--text-on-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color var(--transition-fast);
+}
+.btn-wa-card:hover {
+  background-color: var(--accent-hover);
+}
+.btn-bag-add {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--tap-target-min);
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--text-primary) 20%, transparent);
+  background-color: transparent;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media (max-width: 640px) {
+  .mcard {
+    flex: 0 0 168px;
+    width: 168px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  @supports ((animation-timeline: view()) and (animation-range: entry)) {
+    @keyframes carouselSlideFocus {
+      0% {
+        opacity: 0.85;
+        transform: scale(0.97);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 0.9;
+        transform: scale(0.98);
+      }
+    }
+    .shelf-carousel > .mcard {
+      animation: carouselSlideFocus auto linear both;
+      animation-timeline: view(inline);
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pulse-infinite {
+    animation: none;
+  }
+}

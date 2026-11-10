@@ -1,0 +1,58 @@
+/**
+ * css/variables.css — Sistema de Tokens Semánticos (Velvet Rose, Champagne & Espresso Editorial)
+ * Arquetipo: retail-atelier-botanico | Layout: organic-craft | Hero: split-editorial
+ * Generado bajo contrato UI_UX.md — Prohibido hardcodear hexadecimales fuera de este archivo.
+ */
+:root {
+  color-scheme: light only;
+
+  /* Paleta Semántica Verificada WCAG 2.2 AA */
+  --bg-primary: #FCF8F7;
+  --bg-secondary: #F4E8E6;
+  --bg-elevated: #231517;
+  --text-primary: #231517;
+  --text-secondary: #5E474A;
+  --text-on-dark: #FCF8F7;
+  --accent-primary: #9B2C47;
+  --accent-hover: #7A1F36;
+  --status-success: #1E7E48;
+  --status-danger: #B02A37;
+
+  /* Tipografías de Autor */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-serif-alt: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+
+  /* Escala Tipográfica Fluida (clamp Mobile-First 320px -> 1440px) */
+  --step--1: clamp(0.82rem, 0.78rem + 0.2vw, 0.92rem);
+  --step-0: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --step-1: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --step-2: clamp(1.6rem, 1.4rem + 1vw, 2.25rem);
+  --step-3: clamp(2.1rem, 1.75rem + 1.75vw, 3.25rem);
+
+  /* Radios, Sombras y Ergonomía Táctil (44x44px mínimo obligatorio) */
+  --tap-target-min: 44px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow-elevated: 0 16px 36px rgba(0, 0, 0, 0.14);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: 200ms var(--ease-out);
+  --transition-smooth: 350ms var(--ease-out);
+}
+
+/* Tema Editorial Nocturno (Velvet Noir Mode) activable en 0ms */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-primary: #120D0E;
+  --bg-secondary: #1D1517;
+  --bg-elevated: #2A1E21;
+  --text-primary: #FAF5F6;
+  --text-secondary: #C8B6B9;
+  --text-on-dark: #FAF5F6;
+  --accent-primary: #E15B78;
+  --accent-hover: #F07B95;
+  --shadow-card: 0 10px 28px rgba(0, 0, 0, 0.38);
+  --shadow-elevated: 0 20px 44px rgba(0, 0, 0, 0.55);
+}

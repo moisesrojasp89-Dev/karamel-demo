@@ -1,0 +1,11 @@
+{
+  "name": "velvet-aura-makeup",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Velvet Aura Beauty — Plataforma Web Local-First",
+  "scripts": {
+    "db:provision": "node scripts/provision_supabase.js",
+    "deploy:cloudflare": "node scripts/deploy_cloudflare.js"
+  }
+}
