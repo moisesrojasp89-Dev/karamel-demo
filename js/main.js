@@ -290,11 +290,18 @@ export function renderCategoryPills(items) {
     medallionsContainer.innerHTML = entries
       .map(([cat, catItems]) => {
         const label = cat === 'ALL' ? 'Todos' : cat;
-        const sampleImg = catItems.find((i) => i.imageUrl)?.imageUrl || 'assets/hero-showcase.svg';
+        const photos = catItems.filter((i) => i.imageUrl).map((i) => i.imageUrl);
         const isAct = activeCategory === cat ? 'active' : '';
+        const mediaHtml =
+          cat === 'ALL' && photos.length >= 4
+            ? `<div class="medallion-collage" aria-hidden="true">${photos
+                .slice(0, 4)
+                .map((src) => `<img src="${escHtml(src)}" alt="" class="medallion-img" loading="lazy" width="84" height="84">`)
+                .join('')}</div>`
+            : `<img src="${escHtml(photos[0] || 'assets/hero-showcase.svg')}" alt="${escHtml(label)}" class="medallion-img" loading="lazy" width="84" height="84">`;
         return `<button type="button" class="medallion-card ${isAct}" data-category="${escHtml(cat)}" aria-pressed="${activeCategory === cat}">
           <div class="medallion-circle">
-            <img src="${escHtml(sampleImg)}" alt="${escHtml(label)}" class="medallion-img" loading="lazy" width="84" height="84">
+            ${mediaHtml}
           </div>
           <span class="medallion-title">${escHtml(label)}</span>
           <span class="medallion-count">${catItems.length} productos</span>

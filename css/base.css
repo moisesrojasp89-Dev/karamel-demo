@@ -452,6 +452,21 @@ button:active {
 .medallion-card:hover .medallion-img {
   transform: scale(1.07);
 }
+/* "Todos" no repite la foto de una categoría: muestra un mosaico 2x2. */
+.medallion-collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.medallion-collage .medallion-img {
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .medallion-title {
   font-family: var(--font-sans);
   font-size: 0.76rem;
