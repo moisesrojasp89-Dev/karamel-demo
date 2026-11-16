@@ -10,6 +10,13 @@ export const CATALOG_ITEMS = [
     "badge": "Holy Grail",
     "imageUrl": "assets/products/img-01.webp",
     "rating": 5,
+    "shades": [
+      "#F3D6C2",
+      "#E8B99A",
+      "#D49B72",
+      "#B87A54",
+      "#8A5A3B"
+    ],
     "featured": true
   },
   {
@@ -23,6 +30,13 @@ export const CATALOG_ITEMS = [
     "badge": "Best Seller",
     "imageUrl": "assets/products/img-02.webp",
     "rating": 4.9,
+    "shades": [
+      "#F3D6C2",
+      "#E8B99A",
+      "#D49B72",
+      "#B87A54",
+      "#8A5A3B"
+    ],
     "featured": true
   },
   {
@@ -36,6 +50,13 @@ export const CATALOG_ITEMS = [
     "badge": "40+ Tonos",
     "imageUrl": "assets/products/img-03.webp",
     "rating": 4.9,
+    "shades": [
+      "#F3D6C2",
+      "#E8B99A",
+      "#D49B72",
+      "#B87A54",
+      "#8A5A3B"
+    ],
     "featured": false
   },
   {
@@ -49,6 +70,13 @@ export const CATALOG_ITEMS = [
     "badge": "Viral Sephora",
     "imageUrl": "assets/products/img-04.webp",
     "rating": 5,
+    "shades": [
+      "#F3D6C2",
+      "#E8B99A",
+      "#D49B72",
+      "#B87A54",
+      "#8A5A3B"
+    ],
     "featured": true
   },
   {
@@ -62,6 +90,13 @@ export const CATALOG_ITEMS = [
     "badge": "Clásico Pro",
     "imageUrl": "assets/products/img-05.webp",
     "rating": 4.9,
+    "shades": [
+      "#F3D6C2",
+      "#E8B99A",
+      "#D49B72",
+      "#B87A54",
+      "#8A5A3B"
+    ],
     "featured": false
   },
   {
@@ -75,6 +110,13 @@ export const CATALOG_ITEMS = [
     "badge": "Clean Tech",
     "imageUrl": "assets/products/img-06.webp",
     "rating": 4.9,
+    "shades": [
+      "#F3D6C2",
+      "#E8B99A",
+      "#D49B72",
+      "#B87A54",
+      "#8A5A3B"
+    ],
     "featured": true
   },
   {
@@ -88,6 +130,13 @@ export const CATALOG_ITEMS = [
     "badge": "#1 Viral",
     "imageUrl": "assets/products/img-07.webp",
     "rating": 5,
+    "shades": [
+      "#B3123F",
+      "#D6335C",
+      "#E8627E",
+      "#F08FA3",
+      "#7A1E3A"
+    ],
     "featured": true
   },
   {
@@ -101,6 +150,13 @@ export const CATALOG_ITEMS = [
     "badge": "Best Seller",
     "imageUrl": "assets/products/img-08.webp",
     "rating": 4.9,
+    "shades": [
+      "#B3123F",
+      "#D6335C",
+      "#E8627E",
+      "#F08FA3",
+      "#7A1E3A"
+    ],
     "featured": true
   },
   {
@@ -114,6 +170,13 @@ export const CATALOG_ITEMS = [
     "badge": "Cult Classic",
     "imageUrl": "assets/products/img-09.webp",
     "rating": 4.9,
+    "shades": [
+      "#B3123F",
+      "#D6335C",
+      "#E8627E",
+      "#F08FA3",
+      "#7A1E3A"
+    ],
     "featured": false
   },
   {
@@ -127,6 +190,13 @@ export const CATALOG_ITEMS = [
     "badge": "Alta Costura",
     "imageUrl": "assets/products/img-10.webp",
     "rating": 5,
+    "shades": [
+      "#B3123F",
+      "#D6335C",
+      "#E8627E",
+      "#F08FA3",
+      "#7A1E3A"
+    ],
     "featured": true
   },
   {
@@ -140,6 +210,13 @@ export const CATALOG_ITEMS = [
     "badge": "Icónico",
     "imageUrl": "assets/products/img-11.webp",
     "rating": 4.9,
+    "shades": [
+      "#B3123F",
+      "#D6335C",
+      "#E8627E",
+      "#F08FA3",
+      "#7A1E3A"
+    ],
     "featured": true
   },
   {
@@ -153,6 +230,13 @@ export const CATALOG_ITEMS = [
     "badge": "Tendencia",
     "imageUrl": "assets/products/img-12.webp",
     "rating": 4.9,
+    "shades": [
+      "#B3123F",
+      "#D6335C",
+      "#E8627E",
+      "#F08FA3",
+      "#7A1E3A"
+    ],
     "featured": true
   },
   {
@@ -166,6 +250,13 @@ export const CATALOG_ITEMS = [
     "badge": "Top Ventas",
     "imageUrl": "assets/products/img-13.webp",
     "rating": 5,
+    "shades": [
+      "#E77A86",
+      "#F09BA3",
+      "#D96A5F",
+      "#C4515C",
+      "#F3B6AE"
+    ],
     "featured": true
   },
   {
@@ -179,6 +270,13 @@ export const CATALOG_ITEMS = [
     "badge": "Jelly Viral",
     "imageUrl": "assets/products/img-14.webp",
     "rating": 4.9,
+    "shades": [
+      "#E77A86",
+      "#F09BA3",
+      "#D96A5F",
+      "#C4515C",
+      "#F3B6AE"
+    ],
     "featured": false
   },
   {
@@ -192,6 +290,13 @@ export const CATALOG_ITEMS = [
     "badge": "MUA Favorite",
     "imageUrl": "assets/products/img-15.webp",
     "rating": 4.9,
+    "shades": [
+      "#E77A86",
+      "#F09BA3",
+      "#D96A5F",
+      "#C4515C",
+      "#F3B6AE"
+    ],
     "featured": true
   },
   {
@@ -205,6 +310,13 @@ export const CATALOG_ITEMS = [
     "badge": "Lujo Puro",
     "imageUrl": "assets/products/img-16.webp",
     "rating": 5,
+    "shades": [
+      "#E77A86",
+      "#F09BA3",
+      "#D96A5F",
+      "#C4515C",
+      "#F3B6AE"
+    ],
     "featured": true
   },
   {
@@ -218,6 +330,13 @@ export const CATALOG_ITEMS = [
     "badge": "Clean Beauty",
     "imageUrl": "assets/products/img-17.webp",
     "rating": 4.9,
+    "shades": [
+      "#E77A86",
+      "#F09BA3",
+      "#D96A5F",
+      "#C4515C",
+      "#F3B6AE"
+    ],
     "featured": false
   },
   {
@@ -231,6 +350,13 @@ export const CATALOG_ITEMS = [
     "badge": "Glass Skin",
     "imageUrl": "assets/products/img-18.webp",
     "rating": 4.9,
+    "shades": [
+      "#E77A86",
+      "#F09BA3",
+      "#D96A5F",
+      "#C4515C",
+      "#F3B6AE"
+    ],
     "featured": false
   },
   {
@@ -244,6 +370,13 @@ export const CATALOG_ITEMS = [
     "badge": "Pro Essential",
     "imageUrl": "assets/products/img-06.webp",
     "rating": 5,
+    "shades": [
+      "#4A3728",
+      "#6B4A34",
+      "#8C6A4A",
+      "#2E2620",
+      "#A98A6B"
+    ],
     "featured": true
   },
   {
@@ -257,6 +390,13 @@ export const CATALOG_ITEMS = [
     "badge": "#1 Mascara",
     "imageUrl": "assets/products/img-19.webp",
     "rating": 4.9,
+    "shades": [
+      "#4A3728",
+      "#6B4A34",
+      "#8C6A4A",
+      "#2E2620",
+      "#A98A6B"
+    ],
     "featured": false
   },
   {
@@ -270,6 +410,13 @@ export const CATALOG_ITEMS = [
     "badge": "Efecto Lifting",
     "imageUrl": "assets/products/img-20.webp",
     "rating": 4.9,
+    "shades": [
+      "#4A3728",
+      "#6B4A34",
+      "#8C6A4A",
+      "#2E2620",
+      "#A98A6B"
+    ],
     "featured": false
   },
   {
@@ -283,6 +430,13 @@ export const CATALOG_ITEMS = [
     "badge": "Cero Grumos",
     "imageUrl": "assets/products/img-02.webp",
     "rating": 5,
+    "shades": [
+      "#4A3728",
+      "#6B4A34",
+      "#8C6A4A",
+      "#2E2620",
+      "#A98A6B"
+    ],
     "featured": false
   },
   {
@@ -296,6 +450,13 @@ export const CATALOG_ITEMS = [
     "badge": "Cejas Laminadas",
     "imageUrl": "assets/products/img-21.webp",
     "rating": 4.9,
+    "shades": [
+      "#4A3728",
+      "#6B4A34",
+      "#8C6A4A",
+      "#2E2620",
+      "#A98A6B"
+    ],
     "featured": false
   },
   {
@@ -309,6 +470,13 @@ export const CATALOG_ITEMS = [
     "badge": "Agarre 12H",
     "imageUrl": "assets/products/img-22.webp",
     "rating": 4.9,
+    "shades": [
+      "#EBD9C8",
+      "#DCC4AE",
+      "#C9A98C",
+      "#F2E7DC",
+      "#BFA084"
+    ],
     "featured": true
   },
   {
@@ -322,6 +490,13 @@ export const CATALOG_ITEMS = [
     "badge": "Piel Sensible",
     "imageUrl": "assets/products/img-23.webp",
     "rating": 5,
+    "shades": [
+      "#EBD9C8",
+      "#DCC4AE",
+      "#C9A98C",
+      "#F2E7DC",
+      "#BFA084"
+    ],
     "featured": false
   },
   {
@@ -335,6 +510,13 @@ export const CATALOG_ITEMS = [
     "badge": "K-Beauty Glow",
     "imageUrl": "assets/products/img-24.webp",
     "rating": 4.9,
+    "shades": [
+      "#EBD9C8",
+      "#DCC4AE",
+      "#C9A98C",
+      "#F2E7DC",
+      "#BFA084"
+    ],
     "featured": true
   },
   {
@@ -348,6 +530,13 @@ export const CATALOG_ITEMS = [
     "badge": "Backstage Icon",
     "imageUrl": "assets/products/img-25.webp",
     "rating": 4.9,
+    "shades": [
+      "#EBD9C8",
+      "#DCC4AE",
+      "#C9A98C",
+      "#F2E7DC",
+      "#BFA084"
+    ],
     "featured": false
   },
   {
@@ -361,6 +550,13 @@ export const CATALOG_ITEMS = [
     "badge": "16H Lock",
     "imageUrl": "assets/products/img-03.webp",
     "rating": 5,
+    "shades": [
+      "#C98A5A",
+      "#A96A3F",
+      "#8C4E2A",
+      "#E0B48C",
+      "#6E3A20"
+    ],
     "featured": true
   },
   {
@@ -374,6 +570,13 @@ export const CATALOG_ITEMS = [
     "badge": "Incluye Brocha",
     "imageUrl": "assets/products/img-04.webp",
     "rating": 4.9,
+    "shades": [
+      "#C98A5A",
+      "#A96A3F",
+      "#8C4E2A",
+      "#E0B48C",
+      "#6E3A20"
+    ],
     "featured": true
   },
   {
@@ -387,6 +590,13 @@ export const CATALOG_ITEMS = [
     "badge": "Filtro Airbrush",
     "imageUrl": "assets/products/img-01.webp",
     "rating": 4.9,
+    "shades": [
+      "#C98A5A",
+      "#A96A3F",
+      "#8C4E2A",
+      "#E0B48C",
+      "#6E3A20"
+    ],
     "featured": true
   }
 ];

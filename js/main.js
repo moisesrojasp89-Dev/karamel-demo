@@ -342,6 +342,12 @@ export function renderCatalog(items) {
             : `<span class="mcard-brand">${escHtml(SITE_CONFIG.BUSINESS_NAME)}</span>`;
           const badgeHtml = item.badge ? `<span class="mcard-badge">${escHtml(item.badge)}</span>` : '';
           const imgSrc = item.imageUrl || 'assets/hero-showcase.svg';
+          const shadeList = Array.isArray(item.shades) ? item.shades.filter((shade) => /^#[0-9A-Fa-f]{6}$/.test(shade)) : [];
+          const shadesHtml = shadeList.length > 0
+            ? `<div class="mcard-shades" aria-label="${shadeList.length} tonos disponibles">${shadeList
+                .map((shade) => `<i class="mcard-shade shade-${shade.replace('#', '').toLowerCase()}"></i>`)
+                .join('')}</div>`
+            : '';
 
           return `
         <article class="mcard" data-id="${escHtml(item.id)}">
@@ -356,6 +362,7 @@ export function renderCatalog(items) {
           <div class="mcard-body">
             ${brandHtml}
             <h3 class="mcard-title">${escHtml(item.name)}</h3>
+            ${shadesHtml}
             <span class="stars-gold" aria-hidden="true">★★★★★</span>
             <div class="mcard-compact-bottom">
               <strong class="mcard-price">$${priceFormatted}</strong>
