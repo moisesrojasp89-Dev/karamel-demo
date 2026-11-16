@@ -37,8 +37,8 @@
   padding: 0.35rem 0.15rem 1rem;
 }
 .mcard {
-  flex: 0 0 244px;
-  width: 244px;
+  flex: 0 0 var(--card-width);
+  width: var(--card-width);
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
@@ -60,7 +60,7 @@
 .mcard-media {
   position: relative;
   margin: 6px;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: var(--card-aspect);
   border-radius: calc(var(--radius-card) - 6px);
   background-color: var(--bg-secondary);
   overflow: hidden;
@@ -255,8 +255,8 @@
 }
 @media (max-width: 640px) {
   .mcard {
-    flex: 0 0 196px;
-    width: 196px;
+    flex: 0 0 calc(var(--card-width) * 0.8);
+    width: calc(var(--card-width) * 0.8);
   }
 }
 @media (prefers-reduced-motion: no-preference) {
