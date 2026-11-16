@@ -37,15 +37,15 @@
   padding: 0.35rem 0.15rem 1rem;
 }
 .mcard {
-  flex: 0 0 212px;
-  width: 212px;
+  flex: 0 0 244px;
+  width: 244px;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--bg-primary);
-  border: 1px solid color-mix(in srgb, var(--text-primary) 9%, transparent);
-  border-radius: var(--radius-md);
+  border: 1px solid color-mix(in srgb, var(--text-primary) 8%, transparent);
+  border-radius: var(--radius-card);
   overflow: hidden;
   cursor: pointer;
   text-align: left;
@@ -54,14 +54,14 @@
   overflow-wrap: break-word;
 }
 .mcard:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-elevated);
-  border-color: color-mix(in srgb, var(--accent-primary) 45%, transparent);
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--accent-primary) 40%, transparent);
 }
 .mcard-media {
   position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 5;
+  margin: 6px;
+  aspect-ratio: 1 / 1;
+  border-radius: calc(var(--radius-card) - 6px);
   background-color: var(--bg-secondary);
   overflow: hidden;
   display: flex;
@@ -108,30 +108,29 @@
 
 .mcard-quick-plus {
   position: absolute;
-  bottom: 0.6rem;
-  right: 0.6rem;
-  width: 32px;
-  height: 32px;
+  bottom: 0.55rem;
+  left: 0.55rem;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: color-mix(in srgb, var(--bg-primary) 90%, transparent);
-  backdrop-filter: blur(6px);
+  border: 1px solid color-mix(in srgb, var(--text-primary) 10%, transparent);
+  background-color: var(--bg-primary);
   color: var(--text-primary);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  box-shadow: var(--shadow-card);
-  transition: background-color var(--transition-fast), color var(--transition-fast);
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
 }
 .mcard:hover .mcard-quick-plus {
   background-color: var(--accent-primary);
   color: var(--text-on-dark);
 }
 .mcard-body {
-  padding: 0.85rem 0.9rem 0.95rem;
+  padding: 0.7rem 0.95rem 0.85rem;
   display: grid;
-  gap: 0.28rem;
+  gap: 0.25rem;
 }
 .mcard-brand {
   font-size: 0.64rem;
@@ -163,8 +162,9 @@
 }
 .mcard-price {
   font-family: var(--font-sans);
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   font-weight: 700;
+  font-variant-numeric: tabular-nums;
   color: var(--text-primary);
 }
 .mcard-tap-hint {
@@ -255,8 +255,8 @@
 }
 @media (max-width: 640px) {
   .mcard {
-    flex: 0 0 168px;
-    width: 168px;
+    flex: 0 0 196px;
+    width: 196px;
   }
 }
 @media (prefers-reduced-motion: no-preference) {

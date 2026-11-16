@@ -35,6 +35,10 @@
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 22px;
+  /* Arco del hero: forma propia de la marca, no un radio genérico. */
+  --radius-card: 16px;
+  --radius-arch: 220px 220px 24px 24px;
+  --radius-arch-inner: 212px 212px 18px 18px;
   --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.06);
   --shadow-elevated: 0 16px 36px rgba(0, 0, 0, 0.14);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
