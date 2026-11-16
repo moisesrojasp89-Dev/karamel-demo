@@ -1,0 +1,5 @@
+# Reglas Clean URLs para Cloudflare Pages (ARCHITECTURE.md)
+/contacto /contacto.html 200
+/privacidad /privacidad.html 200
+/terminos /terminos.html 200
+/panel-gestion /panel-gestion.html 200
