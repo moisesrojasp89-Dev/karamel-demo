@@ -1,0 +1,141 @@
+::view-transition {
+  background-color: var(--bg-primary);
+}
+#app-root {
+  view-transition-name: app-root;
+}
+header.site-header {
+  view-transition-name: site-header;
+}
+footer.site-footer {
+  view-transition-name: site-footer;
+}
+::view-transition-old(app-root) {
+  animation: 150ms var(--ease-out) both karamel-page-out;
+}
+::view-transition-new(app-root) {
+  animation: 150ms var(--ease-out) both karamel-page-in;
+}
+@keyframes karamel-page-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes karamel-page-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+.mobile-dock {
+  display: none;
+}
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 53px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .nav-hide-mobile {
+    display: none;
+  }
+}
+::selection {
+  background-color: color-mix(in srgb, var(--accent-primary) 28%, transparent);
+  color: inherit;
+}
+::-moz-focus-inner, ::-moz-focus-outer {
+  border: 0;
+}
+:-moz-focusring,
+a:-moz-focusring,
+button:-moz-focusring {
+  outline: none;
+}
+html {
+  background-color: var(--bg-primary);
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+img {
+  max-width: 100%;
+  border: 0;
+}
+/* Supresión de marcos azules del navegador al hacer clic con ratón o tocar en pantalla */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+/* Enfoque por teclado (Tab) con el tono editorial de autor, sin marcos azules genéricos */
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+}
+/* Anclas hash (#lookbook, #catalogo), secciones objetivo o contenedores programáticos sin marco */
+:target,
+[tabindex="-1"]:focus,
+[tabindex="-1"]:focus-visible,
+section:focus,
+section:focus-visible,
+article:focus,
+article:focus-visible,
+main:focus,
+main:focus-visible,
+dialog:focus,
+dialog:focus-visible {
+  outline: none;
+}
+a, button, input, select, textarea, summary, [role="button"], .nav-link, .brand-link {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+a:active,
+button:active {
+  outline: none;
+}
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+.section-block {
+  padding: var(--space-10) 0;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 420px;
+}
+.section-header-center {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto var(--space-7);
+  display: grid;
+  gap: var(--space-2);
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}

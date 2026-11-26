@@ -1,0 +1,45 @@
+/* Tonos del catálogo (paleta como puntos). Generado desde el brief. */
+.mcard-shades {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.15rem;
+}
+.mcard-shade {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--text-primary) 18%, transparent);
+  flex: 0 0 auto;
+}
+.mcard-shade-more {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-left: 0.1rem;
+}
+.shade-2e2620 { background-color: #2E2620; }
+.shade-4a3728 { background-color: #4A3728; }
+.shade-6b4a34 { background-color: #6B4A34; }
+.shade-6e3a20 { background-color: #6E3A20; }
+.shade-7a1e3a { background-color: #7A1E3A; }
+.shade-8a5a3b { background-color: #8A5A3B; }
+.shade-8c4e2a { background-color: #8C4E2A; }
+.shade-8c6a4a { background-color: #8C6A4A; }
+.shade-a96a3f { background-color: #A96A3F; }
+.shade-a98a6b { background-color: #A98A6B; }
+.shade-b3123f { background-color: #B3123F; }
+.shade-b87a54 { background-color: #B87A54; }
+.shade-c4515c { background-color: #C4515C; }
+.shade-c98a5a { background-color: #C98A5A; }
+.shade-d49b72 { background-color: #D49B72; }
+.shade-d6335c { background-color: #D6335C; }
+.shade-d96a5f { background-color: #D96A5F; }
+.shade-e0b48c { background-color: #E0B48C; }
+.shade-e77a86 { background-color: #E77A86; }
+.shade-e8627e { background-color: #E8627E; }
+.shade-e8b99a { background-color: #E8B99A; }
+.shade-f08fa3 { background-color: #F08FA3; }
+.shade-f09ba3 { background-color: #F09BA3; }
+.shade-f3b6ae { background-color: #F3B6AE; }
+.shade-f3d6c2 { background-color: #F3D6C2; }

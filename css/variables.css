@@ -1,0 +1,118 @@
+/**
+ * css/variables.css — Sistema de Tokens Semánticos (Velvet Rose, Champagne & Espresso Editorial)
+ * Arquetipo: retail-atelier-botanico | Layout: organic-craft | Hero: split-editorial
+ * Generado bajo contrato UI_UX.md — Prohibido hardcodear hexadecimales fuera de este archivo.
+ */
+:root {
+  color-scheme: light only;
+
+  /* Paleta Semántica Verificada WCAG 2.2 AA */
+  --bg-primary: #FCF8F7;
+  --bg-secondary: #F4E8E6;
+  --bg-elevated: #231517;
+  --text-primary: #231517;
+  --text-secondary: #5E474A;
+  --text-on-dark: #FCF8F7;
+  --text-on-accent: #FCF8F7;
+  --accent-primary: #9B2C47;
+  --accent-hover: #7A1F36;
+  --accent-ink: #9B2C47;
+  --status-success: #1E7E48;
+  --status-danger: #B02A37;
+
+  /* Alternancia editorial de superficies Ink / Paper */
+  --surface-ink: #231517;
+  --surface-ink-card: #1C1917;
+  --surface-paper: #FAF7F2;
+  --surface-paper-card: #FFFFFF;
+  --surface-warm: #F2EAE0;
+  --text-on-paper: #161412;
+  --text-muted-on-paper: #575049;
+  --text-muted-on-ink: #C9BEB3;
+
+  /* Tipografías de Autor */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-serif-alt: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+
+  /* Escala de espaciado (base 8) con alias semánticos.
+     Ninguna sección inventa su padding: usa --space-section. */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+  --space-11: 80px;
+  --space-12: 96px;
+  --space-section: var(--space-12);
+  --space-section-sm: var(--space-10);
+  --space-stack: var(--space-6);
+  --space-card: var(--space-5);
+
+  /* Jerarquía de títulos: una escala, no tamaños sueltos. */
+  --text-2xs: 0.65rem;
+  --text-xs: 0.72rem;
+  --text-sm: 0.82rem;
+  --text-base: 1rem;
+  --text-md: 1.1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.9rem;
+  --text-3xl: 2.4rem;
+  --text-display: clamp(3.2rem, 11vw, 7.5rem);
+  --text-display-md: clamp(2.2rem, 4.5vw, 3.6rem);
+  --text-display-sm: clamp(1.6rem, 3vw, 2.4rem);
+  --text-brand: clamp(1.15rem, 1rem + 0.5vw, 1.5rem);
+  --text-h1: clamp(2.4rem, 5.5vw, 4.2rem);
+  --text-h2: clamp(1.7rem, 3.2vw, 2.4rem);
+  --text-h3: clamp(1.3rem, 2.2vw, 1.7rem);
+  --lh-tight: 1.1;
+  --lh-normal: 1.55;
+
+  /* Escala Tipográfica Fluida (clamp Mobile-First 320px -> 1440px) */
+  --step--1: clamp(0.82rem, 0.78rem + 0.2vw, 0.92rem);
+  --step-0: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --step-1: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --step-2: clamp(1.6rem, 1.4rem + 1vw, 2.25rem);
+  --step-3: clamp(2.1rem, 1.75rem + 1.75vw, 3.25rem);
+
+  /* Radios, Sombras y Ergonomía Táctil (44x44px mínimo obligatorio) */
+  --tap-target-min: 44px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  /* Arco del hero: forma propia de la marca, no un radio genérico. */
+  --radius-card: 16px;
+  --radius-arch: 220px 220px 24px 24px;
+  --radius-arch-inner: 212px 212px 18px 18px;
+  /* Geometría de card por vertical: no hay tamaño universal. */
+  --card-width: 244px;
+  --card-aspect: 4 / 5;
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow-elevated: 0 16px 36px rgba(0, 0, 0, 0.14);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: 200ms var(--ease-out);
+  --transition-smooth: 350ms var(--ease-out);
+}
+
+/* Tema nocturno derivado del arquetipo: la marca no cambia de color al
+   apagar la luz, solo la superficie. */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-primary: #231517;
+  --bg-secondary: color-mix(in srgb, #231517 93%, white);
+  --bg-elevated: color-mix(in srgb, #231517 84%, #9B2C47);
+  --text-primary: #FCF8F7;
+  --text-secondary: color-mix(in srgb, #FCF8F7 72%, #231517);
+  --text-on-dark: #FCF8F7;
+  --accent-primary: #9B2C47;
+  --accent-hover: #7A1F36;
+  --accent-ink: color-mix(in srgb, #9B2C47 42%, #FCF8F7);
+  --shadow-card: 0 10px 28px rgba(0, 0, 0, 0.38);
+  --shadow-elevated: 0 20px 44px rgba(0, 0, 0, 0.55);
+}
